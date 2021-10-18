@@ -2,6 +2,7 @@
 
 require_relative "cocktails/version"
 
+
 module Cocktails
   class Error < StandardError; end
   # Your code goes here...
