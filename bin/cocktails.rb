@@ -2,7 +2,7 @@ require_relative "../config/environment"
 
 
 
-CLI.new.run
+API.new.find_cocktail
 
 
 
