@@ -2,10 +2,15 @@ class Drinks
 
     @@all = []
 
-    attr_accessor 
+    attr_accessor :name, :category, :type, :instructions, :ingredients
     
-    def initialize
-
+    def initialize(name, category, type, instructions, ingredients)
+      @name = name
+      @category = category
+      @type = type
+      @instructions = instructions
+      @ingredients = ingredients
+      self.save
     end
       
 
