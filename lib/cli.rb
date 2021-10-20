@@ -8,7 +8,6 @@
 
 #   def welcome
 #     puts "Welcome to the Motti's ultimate beverage experience!"
-    
 #   end  
 
 #   def drink_selection

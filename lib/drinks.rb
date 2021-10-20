@@ -2,10 +2,14 @@ class Drinks
 
     @@all = []
 
-    attr_accessor :drinks, :ingredients
+    attr_accessor 
     
     def initialize
 
+    end
+      
+
+    def save
       @@all << self
     end
 

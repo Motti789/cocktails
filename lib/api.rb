@@ -5,19 +5,31 @@ class API
     
     def find_cocktail
         uri = URI.parse(URL)
-        response = Net::HTTP.get_response(uri)
-        response.body
-        data = JSON.parse(response.body)
-        data["drinks"].each do  |drink|
+        response = Net::HTTP.get(uri)
+        response
+        data = JSON.parse(response)
+        data["drinks"].each do |drink|
+         hash = {
+             :id => drink["idDrink"], 
+             :name => drink["strDrink"], 
+             :category => drink["strCategory"], 
+             :type => drink["strAlcoholic"], 
+             :instructions => drink["strInstructions"]}
+              ingredients = [drink["strIngredient1"], drink["strIngredient2"], drink["strIngredient3"], drink["strIngredient4"]]
+              
+
+              
         end
+
         
         
-        binding.pry
+        
         
 
     end
 end  
   
 
-  drinks = API.new.find_cocktail
-  puts drinks
+   drinks = API.new.find_cocktail
+   puts drinks
+   binding.pry
