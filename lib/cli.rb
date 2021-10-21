@@ -4,6 +4,7 @@ class CLI
     puts "Welcome to Motti's Ultimate Beverage Experience!"
 
     puts "Loading please wait..."
+    sleep(2)
     
     puts "Thank you for waiting"
     print_main_menu
@@ -46,11 +47,12 @@ class CLI
   end
 
   def print_drinks
-    Drinks.all.each.with_index do |drink, index|
-      puts "Drink #{index}."
-      puts "Drink #{drink.name}" 
-    end
-end
+    Drinks.all
+    # Drinks.all.each.with_index do |drink, index|
+    #   puts "Drink #{index}."
+    #   puts "Drink #{drink.name}" 
+    # end
+  end
   
   
 

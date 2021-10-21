@@ -20,7 +20,7 @@ class API
         Ingredients.new(ingredient) 
         Instructions.new(instruction) 
         end
-        binding.pry
+        
         
 
         
