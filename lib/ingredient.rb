@@ -2,10 +2,10 @@ class Ingredients
 
     @@all = []
 
-    attr_accessor :ingredients
+    attr_accessor :ingredient
     
     def initialize(ingredient)
-        @ingredients = ingredient
+        @ingredient = ingredient
         self.save
     end
       
