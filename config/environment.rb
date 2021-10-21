@@ -7,6 +7,8 @@ require_relative '../lib/cli.rb'
 require_relative '../lib/api.rb'
 require_relative '../lib/drinks.rb'
 require_relative '../lib/version.rb'
+require_relative '../lib/ingredient.rb'
+require_relative '../lib/instructions.rb'
 
 
 

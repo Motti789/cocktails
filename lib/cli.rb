@@ -10,7 +10,7 @@ class CLI
 
 
   def welcome
-    puts "Welcome to the Motti's ultimate beverage experience!"
+    puts "Welcome to Motti's Ultimate Beverage Experience!"
   end  
 
   def drink_selection

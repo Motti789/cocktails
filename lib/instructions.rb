@@ -1,11 +1,11 @@
-class Drinks
+class Instructions
 
     @@all = []
 
-    attr_accessor :name
+    attr_accessor  :instruction
     
-    def initialize(name)
-      @name = name
+    def initialize(instruction)
+      @instruction = instruction
       self.save
     end
       

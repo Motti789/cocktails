@@ -14,11 +14,13 @@ class API
         name = drink["strDrink"], 
         category = drink["strCategory"], 
         type = drink["strAlcoholic"], 
-        instructions = drink["strInstructions"]
-        ingredients = drink["strIngredient1"], drink["strIngredient2"], drink["strIngredient3"], drink["strIngredient4"]
-        Drinks.new(name, category, type, instructions, ingredients)
-           
+        instruction = drink["strInstructions"]
+        ingredient = drink["strIngredient1"], drink["strIngredient2"], drink["strIngredient3"], drink["strIngredient4"], drink["strIngredient5"], drink["strIngredient6"], drink["strIngredient7"], drink["strIngredient8"], drink["strIngredient9"], drink["strIngredient10"]
+        Drinks.new(name)
+        Ingredient.new(ingredients) 
+        Instructions.new(instruction) 
         end
+        binding.pry
 
         
         
@@ -29,6 +31,5 @@ class API
 end  
   
 
-#    drinks = API.new.find_cocktail
-#    puts drinks
+
    

@@ -1,12 +1,11 @@
-class Ingredient
+class Ingredients
 
     @@all = []
 
-    attr_accessor :drinks, :name 
+    attr_accessor :ingredients
     
-    def initialize(name)
-        @name = name
-        self.cocktails = []
+    def initialize(ingredient)
+        @ingredients = ingredient
         self.save
     end
       
