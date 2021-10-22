@@ -4,7 +4,7 @@ class CLI
     puts "Welcome to Motti's Ultimate Beverage Experience!"
 
     puts "Loading please wait..."
-    sleep(2)
+    sleep(1)
     
     puts "Thank you for waiting"
     API.get_cocktail
@@ -24,7 +24,11 @@ class CLI
     if user_input == "1"
     print_drinks
     puts ""
-    puts "Which drink would you like to choose?".blue
+    puts "Which drink would you like to choose? Please choose a number".blue
+    user_input = gets.strip
+    # elsif user_input == "1"
+    # instructions
+    
     elsif user_input == "exit"
     goodbye
     exit
@@ -55,9 +59,19 @@ class CLI
 
     Drinks.all.each.with_index(1) do |drink, index|
       puts ""
-      puts "Drink #{index}.".green, "#{drink.name}".red
+      puts "Drink #{index}.".green, "#{drink.name}".red 
+    #   "#{drink.ingredients}", "#{drink.instructions}"
     end
   end
+
+  def instructions
+    Drinks.all.each do |how|
+    puts ""
+    puts "#{how.instructions}"
+    end
+    binding.pry
+   end
+   
   
   
   

@@ -2,14 +2,16 @@ class Drinks
 
     @@all = []
 
-    attr_accessor :name
+    attr_accessor :name, :ingredients, :instructions
     
-    def initialize(name)
+    def initialize(name, ingredients, instructions)
       @name = name
+      @ingredients = ingredients
+      @instructions = instructions
       self.save
     end
       
-
+    
     def save
       @@all << self
     end
@@ -18,9 +20,16 @@ class Drinks
       @@all
     end
 
+    # def ingredients
+    # self.all.select do |i|
+    # i == "strInstructions"
+    # end
+    # end
+
   
 
 
 
 
 end
+ 
