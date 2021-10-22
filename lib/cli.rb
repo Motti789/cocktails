@@ -7,7 +7,9 @@ class CLI
     sleep(2)
     
     puts "Thank you for waiting"
+    API.get_cocktail
     print_main_menu
+    
    end 
 
   def print_main_menu
@@ -18,8 +20,11 @@ class CLI
 
   def main_menu
     user_input = gets.strip
+    
     if user_input == "1"
     print_drinks
+    puts ""
+    puts "Which drink would you like to choose?".blue
     elsif user_input == "exit"
     goodbye
     exit
@@ -47,12 +52,13 @@ class CLI
   end
 
   def print_drinks
-    Drinks.all
-    # Drinks.all.each.with_index do |drink, index|
-    #   puts "Drink #{index}."
-    #   puts "Drink #{drink.name}" 
-    # end
+
+    Drinks.all.each.with_index(1) do |drink, index|
+      puts ""
+      puts "Drink #{index}.".green, "#{drink.name}".red
+    end
   end
+  
   
   
 

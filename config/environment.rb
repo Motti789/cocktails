@@ -1,7 +1,8 @@
 require 'pry'
-require "net/http"
-require "open-uri"
-require "json"
+require 'net/http'
+require 'open-uri'
+require 'json'
+require 'colorize'
 
 require_relative '../lib/cli.rb'
 require_relative '../lib/api.rb'

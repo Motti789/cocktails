@@ -3,7 +3,7 @@ class API
 
     URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
     
-    def get_cocktail
+    def self.get_cocktail
         uri = URI.parse(URL)
         response = Net::HTTP.get(uri)
         response
@@ -20,6 +20,8 @@ class API
         Ingredients.new(ingredient) 
         Instructions.new(instruction) 
         end
+
+       
         
         
 
@@ -30,6 +32,8 @@ class API
 
     end
 end  
+
+
  
 
    
