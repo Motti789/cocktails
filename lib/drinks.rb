@@ -20,11 +20,18 @@ class Drinks
       @@all
     end
 
-    # def ingredients
-    # self.all.select do |i|
-    # i == "strInstructions"
+   
+
+    # def self.ingredients
+    # @ingredients = ingredients
+    # self.save
     # end
+    
+
+
+    # def self.instructions
     # end
+
 
   
 
