@@ -19,24 +19,5 @@ class Drinks
     def self.all
       @@all
     end
-
-   
-
-    # def self.ingredients
-    # @ingredients = ingredients
-    # self.save
-    # end
-    
-
-
-    # def self.instructions
-    # end
-
-
-  
-
-
-
-
 end
  
