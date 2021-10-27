@@ -29,7 +29,6 @@ class Drinks
       puts self.ingredients
       puts "Instructions:".bold.green
       puts self.instructions
-    end
-   
+    end   
 end
  

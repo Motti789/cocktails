@@ -7,7 +7,7 @@ class CLI
     puts "Thank you for waiting"
     API.get_cocktail
     print_main_menu
-   end 
+  end 
 
 
   def print_main_menu
@@ -27,21 +27,26 @@ class CLI
        user_input != "1"
        invalid_input
        print_main_menu
-       end
+    end
   end
 
 
   def selected_drink
     user_input = gets.strip
+    
     drink = Drinks.all[user_input.to_i - 1]
-    case user_input
-    when  "1", "2", "3", "4", "5", "6"
+     
+    case user_input 
+    when "1", "2", "3", "4", "5", "6"
+    puts ""
     drink.print
-     else
+    puts""
+    print_main_menu
+    else
     invalid_input
-    selected_drink
-     end
+    selected_drink 
     end
+  end
 
 
   def goodbye
@@ -60,6 +65,7 @@ class CLI
 
 
   def print_drinks
+    puts ""
     Drinks.all.each.with_index(1) do |drink, index|
       puts ""
       puts "Drink #{index}.".green, "#{drink.name}".green
