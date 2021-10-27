@@ -36,7 +36,7 @@ class CLI
     drink = Drinks.all[user_input.to_i - 1]
     case user_input
     when  "1", "2", "3", "4", "5", "6"
-    p drink
+    drink.print
      else
     invalid_input
     selected_drink

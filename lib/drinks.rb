@@ -10,6 +10,7 @@ class Drinks
       @instructions = instructions
       self.save
     end
+    
       
     
     def save
@@ -19,5 +20,16 @@ class Drinks
     def self.all
       @@all
     end
+
+    def print
+      puts "Drink name".bold.green
+      puts  self.name
+      puts ""
+      puts "list of ingredients:".bold.green
+      puts self.ingredients
+      puts "Instructions:".bold.green
+      puts self.instructions
+    end
+   
 end
  
