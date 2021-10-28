@@ -41,7 +41,7 @@ class CLI
     puts ""
     drink.print
     puts""
-    print_main_menu
+    anything_else?
     else
     invalid_input
     selected_drink 
@@ -66,7 +66,24 @@ class CLI
       puts "Drink #{index}.".green, "#{drink.name}".green
     end
   end
-  
+
+
+  def anything_else?
+    puts "Would you like to select a diffrent Drink?".bold
+    puts "[Y/N]"
+    input = gets.strip.upcase
+
+    if input == 'Y'
+    print_main_menu
+    elsif input == 'N'
+      goodbye
+    else
+      invalid_input
+      puts "Please Enter [Y/N]"
+      anything_else?
+    end
+  end
+
 end 
 
 
