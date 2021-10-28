@@ -13,7 +13,8 @@ Make sure you run '$ bundle' to get the required gems. Once you are ready you ca
 
 ## Contributing
 
-Motti Wilschanski mottiwilschanski@gmail.com
+Motti Wilschanski 
+Email: Mottiwilschanski@gmail.com
 
 ## License
 
