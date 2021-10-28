@@ -22,7 +22,3 @@ Email: Mottiwilschanski@gmail.com
 © Motti Wilschanski
 
 Licensed under the MIT License.
-
-## Code of Conduct
-
-Everyone interacting in the Cocktails project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[Motti789]/cocktails/blob/master/CODE_OF_CONDUCT.md).
