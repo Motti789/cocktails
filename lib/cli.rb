@@ -14,16 +14,16 @@ class CLI
     puts "Press 1 for a complete list of all drinks"
     puts "Type 'exit' to exit program"
     user_input = gets.strip
+    
     if user_input == "exit"
        goodbye
        exit
-
     elsif user_input == "1"
        print_drinks 
        puts ""
-       puts "Which drink would you like to choose? Please choose a number"
+       puts "Which drink would you like to learn how to make? Please choose a number."
        selected_drink
-         else
+    else
        user_input != "1"
        invalid_input
        print_main_menu
@@ -59,19 +59,14 @@ class CLI
   end
   
 
-  def drink_selection
-    puts "Please select the drink that you would like to learn how to make"
-  end
-
-
   def print_drinks
     puts ""
     Drinks.all.each.with_index(1) do |drink, index|
       puts ""
       puts "Drink #{index}.".green, "#{drink.name}".green
-      # "#{drink.ingredients}", "#{drink.instructions}"
     end
   end
+  
 end 
 
 
