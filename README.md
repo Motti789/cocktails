@@ -1,8 +1,10 @@
 # Cocktails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cocktails`. To experiment with that code, run `bin/console` for an interactive prompt.
+Hello! And Welcome To Motti's Ultimate Beverage Experience! This program will explore through different kinds of Margarita beverages which we will teach you how you can make on your own!
 
-TODO: Delete this and the text above, and describe your gem
+Have fun, and don't forget to have a good drink!
+
+All the best!
 
 ## Installation
 
