@@ -20,14 +20,16 @@ class Drinks
     def self.all
       @@all
     end
+    
 
     def print
-      puts "Drink name".bold.green
+      puts "Drink name:".green
       puts  self.name
       puts ""
-      puts "list of ingredients:".bold.green
+      puts "List of ingredients:".green
       puts self.ingredients
-      puts "Instructions:".bold.green
+      puts ""
+      puts "Instructions:".green
       puts self.instructions
     end   
 end

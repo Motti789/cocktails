@@ -14,6 +14,7 @@ class API
        name = drink["strDrink"], 
        instructions = drink["strInstructions"]
        ingredients = drink["strIngredient1"], drink["strIngredient2"], drink["strIngredient3"], drink["strIngredient4"], drink["strIngredient5"], drink["strIngredient6"], drink["strIngredient7"], drink["strIngredient8"], drink["strIngredient9"], drink["strIngredient10"]
+       ingredients.delete(nil)
        Drinks.new(name, ingredients, instructions)
        end
     end

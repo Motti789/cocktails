@@ -21,7 +21,7 @@ class CLI
     elsif user_input == "1"
        print_drinks 
        puts ""
-       puts "Which drink would you like to learn how to make? Please choose a number."
+       puts "Which drink would you like to learn how to make? Please choose a number.".italic
        selected_drink
     else
        user_input != "1"
@@ -50,7 +50,7 @@ class CLI
 
 
   def goodbye
-    puts "Now leaving the program. Come visit us again next time!"
+    puts "Now leaving the program. Come visit us again next time!".italic
   end
 
 
@@ -60,7 +60,6 @@ class CLI
   
 
   def print_drinks
-    puts ""
     Drinks.all.each.with_index(1) do |drink, index|
       puts ""
       puts "Drink #{index}.".green, "#{drink.name}".green
@@ -69,7 +68,7 @@ class CLI
 
 
   def anything_else?
-    puts "Would you like to select a diffrent Drink?".bold
+    puts "Would you like to select a different Drink?".italic
     puts "[Y/N]"
     input = gets.strip.upcase
 
