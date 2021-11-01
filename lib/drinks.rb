@@ -2,7 +2,7 @@ class Drinks
 
     @@all = []
 
-    attr_accessor :name, :ingredients, :instructions
+    attr_reader :name, :ingredients, :instructions
     
     def initialize(name, ingredients, instructions)
       @name = name

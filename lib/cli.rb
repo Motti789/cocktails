@@ -29,13 +29,13 @@ class CLI
        print_main_menu
     end
   end
+  
 
 
   def selected_drink
     user_input = gets.strip
     
-    drink = Drinks.all[user_input.to_i - 1]
-     
+     drink = Drinks.all[user_input.to_i - 1]
     case user_input 
     when "1", "2", "3", "4", "5", "6"
     puts ""
@@ -55,7 +55,7 @@ class CLI
 
 
   def invalid_input
-    puts "Invalid command, please try again".red
+    puts "Invalid command, please try again".red.bold
   end
   
 
@@ -74,6 +74,7 @@ class CLI
     input = gets.strip.upcase
 
     if input == 'Y'
+      puts ""
     print_main_menu
     elsif input == 'N'
       goodbye
