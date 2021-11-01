@@ -1,7 +1,7 @@
 class CLI  
     
   def run
-    puts "Welcome to Motti's Ultimate Beverage Experience!".blue
+    puts "Welcome to Motti's Ultimate Beverage Experience!"
     puts "Loading please wait..."
     sleep(1)
     puts "Thank you for waiting"
